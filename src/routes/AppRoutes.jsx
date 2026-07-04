@@ -4,7 +4,6 @@ import { PageSkeleton } from '../components/ui/Skeleton';
 import AppLayout from '../layouts/AppLayout';
 import AuthLayout from '../layouts/AuthLayout';
 import { NotFoundPage, UnauthorizedPage } from './ErrorPages';
-import ModulePlaceholderPage from './ModulePlaceholderPage';
 import { ProtectedRoute, PublicOnlyRoute, RoleRoute } from './ProtectedRoute';
 
 const LoginPage = lazy(() => import('../features/auth/pages/LoginPage'));
@@ -12,6 +11,14 @@ const SignupPage = lazy(() => import('../features/auth/pages/SignupPage'));
 const ForgotPasswordPage = lazy(() => import('../features/auth/pages/ForgotPasswordPage'));
 const VerifyEmailPage = lazy(() => import('../features/auth/pages/VerifyEmailPage'));
 const ResetPasswordPage = lazy(() => import('../features/auth/pages/ResetPasswordPage'));
+const DashboardPage = lazy(() => import('../features/dashboard/pages/DashboardPage'));
+const EmployeesPage = lazy(() => import('../features/employees/pages/EmployeesPage'));
+const EmployeeProfilePage = lazy(() => import('../features/employees/pages/EmployeeProfilePage'));
+const AttendancePage = lazy(() => import('../features/attendance/pages/AttendancePage'));
+const LeavePage = lazy(() => import('../features/leave/pages/LeavePage'));
+const PayrollPage = lazy(() => import('../features/payroll/pages/PayrollPage'));
+const ProfilePage = lazy(() => import('../features/profile/pages/ProfilePage'));
+const SettingsPage = lazy(() => import('../features/profile/pages/SettingsPage'));
 
 export function AppRoutes() {
   return (
@@ -29,15 +36,16 @@ export function AppRoutes() {
         <Route element={<ProtectedRoute />}>
           <Route element={<AppLayout />}>
             <Route path="/" element={<Navigate to="/dashboard" replace />} />
-            <Route path="/dashboard" element={<ModulePlaceholderPage title="Dashboard" description="Your organization at a glance." />} />
+            <Route path="/dashboard" element={<DashboardPage />} />
             <Route element={<RoleRoute roles={['admin']} />}>
-              <Route path="/employees/*" element={<ModulePlaceholderPage title="Employees" description="Manage your workforce and employee records." />} />
+              <Route path="/employees" element={<EmployeesPage />} />
+              <Route path="/employees/:employeeId" element={<EmployeeProfilePage />} />
             </Route>
-            <Route path="/attendance/*" element={<ModulePlaceholderPage title="Attendance" description="Track time, shifts, and attendance trends." />} />
-            <Route path="/leave/*" element={<ModulePlaceholderPage title="Leave" description="Plan and manage employee time off." />} />
-            <Route path="/payroll/*" element={<ModulePlaceholderPage title="Payroll" description="Review compensation and payslips." />} />
-            <Route path="/profile" element={<ModulePlaceholderPage title="Profile" description="Manage your personal and professional information." />} />
-            <Route path="/settings" element={<ModulePlaceholderPage title="Settings" description="Configure your PeopleFlow workspace." />} />
+            <Route path="/attendance" element={<AttendancePage />} />
+            <Route path="/leave" element={<LeavePage />} />
+            <Route path="/payroll" element={<PayrollPage />} />
+            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/settings" element={<SettingsPage />} />
           </Route>
         </Route>
         <Route path="/unauthorized" element={<UnauthorizedPage />} />

@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "employeeCount": 50,
+    "presentToday": 42,
+    "onLeave": 5,
+    "pendingRequests": 8
+  },
+  "attendanceTrend": [
+    {
+      "month": "Jan",
+      "present": 91,
+      "leave": 6,
+      "absent": 3
+    },
+    {
+      "month": "Feb",
+      "present": 93,
+      "leave": 5,
+      "absent": 2
+    },
+    {
+      "month": "Mar",
+      "present": 89,
+      "leave": 8,
+      "absent": 3
+    },
+    {
+      "month": "Apr",
+      "present": 92,
+      "leave": 6,
+      "absent": 2
+    },
+    {
+      "month": "May",
+      "present": 94,
+      "leave": 4,
+      "absent": 2
+    },
+    {
+      "month": "Jun",
+      "present": 92,
+      "leave": 6,
+      "absent": 2
+    }
+  ],
+  "departmentDistribution": [
+    {
+      "name": "Engineering",
+      "employees": 14
+    },
+    {
+      "name": "Product",
+      "employees": 8
+    },
+    {
+      "name": "Sales",
+      "employees": 9
+    },
+    {
+      "name": "Finance",
+      "employees": 6
+    },
+    {
+      "name": "Customer Success",
+      "employees": 7
+    }
+  ],
+  "holidays": [
+    {
+      "name": "Independence Day",
+      "date": "2026-08-15",
+      "day": "Saturday"
+    },
+    {
+      "name": "Raksha Bandhan",
+      "date": "2026-08-28",
+      "day": "Friday"
+    },
+    {
+      "name": "Gandhi Jayanti",
+      "date": "2026-10-02",
+      "day": "Friday"
+    }
+  ],
+  "activities": [
+    {
+      "id": 1,
+      "text": "Nisha Kapoor submitted a leave request",
+      "time": "12 minutes ago",
+      "type": "leave"
+    },
+    {
+      "id": 2,
+      "text": "June payroll processing completed",
+      "time": "2 hours ago",
+      "type": "payroll"
+    },
+    {
+      "id": 3,
+      "text": "Kriti Mathur joined the Marketing team",
+      "time": "Yesterday",
+      "type": "employee"
+    },
+    {
+      "id": 4,
+      "text": "Attendance policy was updated",
+      "time": "2 days ago",
+      "type": "attendance"
+    }
+  ],
+  "employee": {
+    "leaveBalance": {
+      "annual": 12,
+      "sick": 7,
+      "casual": 4
+    },
+    "salary": {
+      "netPay": 102450,
+      "month": "June 2026",
+      "status": "Paid"
+    },
+    "profileCompletion": 92
+  }
+}

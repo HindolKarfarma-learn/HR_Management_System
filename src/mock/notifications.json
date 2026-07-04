@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "text": "Nisha Kapoor submitted a leave request",
+    "time": "12 minutes ago",
+    "type": "leave",
+    "read": false
+  },
+  {
+    "id": 2,
+    "text": "June payroll processing completed",
+    "time": "2 hours ago",
+    "type": "payroll",
+    "read": false
+  },
+  {
+    "id": 3,
+    "text": "Kriti Mathur joined the Marketing team",
+    "time": "Yesterday",
+    "type": "employee",
+    "read": true
+  },
+  {
+    "id": 4,
+    "text": "Attendance policy was updated",
+    "time": "2 days ago",
+    "type": "attendance",
+    "read": true
+  }
+]

@@ -1,0 +1,2152 @@
+[
+  {
+    "id": "EMP-1001",
+    "name": "Aarav Mehta",
+    "email": "aarav.mehta@peopleflow.io",
+    "phone": "+91 90000 12000",
+    "department": "Engineering",
+    "designation": "HR Director",
+    "manager": "Executive Leadership",
+    "location": "Bengaluru",
+    "employmentType": "Contract",
+    "status": "Active",
+    "joiningDate": "2018-01-01",
+    "birthDate": "1986-01-01",
+    "gender": "Male",
+    "address": "34, Indiranagar, Bengaluru",
+    "emergencyContact": {
+      "name": "Aarav Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876543000"
+    },
+    "salary": {
+      "annual": 720000,
+      "basic": 360000,
+      "hra": 144000,
+      "allowances": 144000,
+      "variable": 72000
+    },
+    "documents": [
+      {
+        "id": "DOC-1-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-12-16"
+      },
+      {
+        "id": "DOC-1-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2026-01-05"
+      }
+    ],
+    "profileCompletion": 82
+  },
+  {
+    "id": "EMP-1002",
+    "name": "Nisha Kapoor",
+    "email": "nisha.kapoor@peopleflow.io",
+    "phone": "+91 90137 12073",
+    "department": "Engineering",
+    "designation": "Design Lead",
+    "manager": "Executive Leadership",
+    "location": "Mumbai",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2019-02-02",
+    "birthDate": "1987-02-02",
+    "gender": "Female",
+    "address": "35, Bandra West, Mumbai",
+    "emergencyContact": {
+      "name": "Nisha Family",
+      "relationship": "Parent",
+      "phone": "+91 9876543041"
+    },
+    "salary": {
+      "annual": 815000,
+      "basic": 407500,
+      "hra": 163000,
+      "allowances": 163000,
+      "variable": 81500
+    },
+    "documents": [
+      {
+        "id": "DOC-2-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-12-15"
+      },
+      {
+        "id": "DOC-2-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2026-01-04"
+      }
+    ],
+    "profileCompletion": 86
+  },
+  {
+    "id": "EMP-1003",
+    "name": "Rohan Iyer",
+    "email": "rohan.iyer@peopleflow.io",
+    "phone": "+91 90274 12146",
+    "department": "Product",
+    "designation": "Engineering Manager",
+    "manager": "Executive Leadership",
+    "location": "New Delhi",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2020-03-03",
+    "birthDate": "1988-03-03",
+    "gender": "Male",
+    "address": "36, Saket, New Delhi",
+    "emergencyContact": {
+      "name": "Rohan Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876543082"
+    },
+    "salary": {
+      "annual": 910000,
+      "basic": 455000,
+      "hra": 182000,
+      "allowances": 182000,
+      "variable": 91000
+    },
+    "documents": [
+      {
+        "id": "DOC-3-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-12-14"
+      },
+      {
+        "id": "DOC-3-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2026-01-03"
+      }
+    ],
+    "profileCompletion": 90
+  },
+  {
+    "id": "EMP-1004",
+    "name": "Ananya Bose",
+    "email": "ananya.bose@peopleflow.io",
+    "phone": "+91 90411 12219",
+    "department": "Product Design",
+    "designation": "Product Lead",
+    "manager": "Executive Leadership",
+    "location": "Hyderabad",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2021-04-04",
+    "birthDate": "1989-04-04",
+    "gender": "Female",
+    "address": "37, Hitech City, Hyderabad",
+    "emergencyContact": {
+      "name": "Ananya Family",
+      "relationship": "Parent",
+      "phone": "+91 9876543123"
+    },
+    "salary": {
+      "annual": 1005000,
+      "basic": 502500,
+      "hra": 201000,
+      "allowances": 201000,
+      "variable": 100500
+    },
+    "documents": [
+      {
+        "id": "DOC-4-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-12-13"
+      },
+      {
+        "id": "DOC-4-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2026-01-02"
+      }
+    ],
+    "profileCompletion": 94
+  },
+  {
+    "id": "EMP-1005",
+    "name": "Vikram Sethi",
+    "email": "vikram.sethi@peopleflow.io",
+    "phone": "+91 90548 12292",
+    "department": "Sales",
+    "designation": "Sales Director",
+    "manager": "Executive Leadership",
+    "location": "Pune",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2022-05-05",
+    "birthDate": "1990-05-05",
+    "gender": "Male",
+    "address": "38, Koregaon Park, Pune",
+    "emergencyContact": {
+      "name": "Vikram Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876543164"
+    },
+    "salary": {
+      "annual": 1100000,
+      "basic": 550000,
+      "hra": 220000,
+      "allowances": 220000,
+      "variable": 110000
+    },
+    "documents": [
+      {
+        "id": "DOC-5-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-12-12"
+      },
+      {
+        "id": "DOC-5-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2026-01-01"
+      }
+    ],
+    "profileCompletion": 98
+  },
+  {
+    "id": "EMP-1006",
+    "name": "Meera Nair",
+    "email": "meera.nair@peopleflow.io",
+    "phone": "+91 90685 12365",
+    "department": "Marketing",
+    "designation": "Growth Specialist",
+    "manager": "Aarav Mehta",
+    "location": "Chennai",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2023-06-06",
+    "birthDate": "1991-06-06",
+    "gender": "Female",
+    "address": "39, Indiranagar, Chennai",
+    "emergencyContact": {
+      "name": "Meera Family",
+      "relationship": "Parent",
+      "phone": "+91 9876543205"
+    },
+    "salary": {
+      "annual": 1195000,
+      "basic": 597500,
+      "hra": 239000,
+      "allowances": 239000,
+      "variable": 119500
+    },
+    "documents": [
+      {
+        "id": "DOC-6-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-12-11"
+      },
+      {
+        "id": "DOC-6-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-31"
+      }
+    ],
+    "profileCompletion": 82
+  },
+  {
+    "id": "EMP-1007",
+    "name": "Kabir Malhotra",
+    "email": "kabir.malhotra@peopleflow.io",
+    "phone": "+91 90822 12438",
+    "department": "Finance",
+    "designation": "Financial Analyst",
+    "manager": "Meera Nair",
+    "location": "Bengaluru",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2024-07-07",
+    "birthDate": "1992-07-07",
+    "gender": "Male",
+    "address": "40, Bandra West, Bengaluru",
+    "emergencyContact": {
+      "name": "Kabir Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876543246"
+    },
+    "salary": {
+      "annual": 1290000,
+      "basic": 645000,
+      "hra": 258000,
+      "allowances": 258000,
+      "variable": 129000
+    },
+    "documents": [
+      {
+        "id": "DOC-7-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-12-10"
+      },
+      {
+        "id": "DOC-7-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-30"
+      }
+    ],
+    "profileCompletion": 86
+  },
+  {
+    "id": "EMP-1008",
+    "name": "Ishita Rao",
+    "email": "ishita.rao@peopleflow.io",
+    "phone": "+91 90959 12511",
+    "department": "People Operations",
+    "designation": "HR Business Partner",
+    "manager": "Vikram Sethi",
+    "location": "Mumbai",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2025-08-08",
+    "birthDate": "1993-08-08",
+    "gender": "Female",
+    "address": "41, Saket, Mumbai",
+    "emergencyContact": {
+      "name": "Ishita Family",
+      "relationship": "Parent",
+      "phone": "+91 9876543287"
+    },
+    "salary": {
+      "annual": 1385000,
+      "basic": 692500,
+      "hra": 277000,
+      "allowances": 277000,
+      "variable": 138500
+    },
+    "documents": [
+      {
+        "id": "DOC-8-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-12-09"
+      },
+      {
+        "id": "DOC-8-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-29"
+      }
+    ],
+    "profileCompletion": 90
+  },
+  {
+    "id": "EMP-1009",
+    "name": "Arjun Desai",
+    "email": "arjun.desai@peopleflow.io",
+    "phone": "+91 91096 12584",
+    "department": "Customer Success",
+    "designation": "Customer Success Manager",
+    "manager": "Priya Menon",
+    "location": "New Delhi",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2018-09-09",
+    "birthDate": "1994-09-09",
+    "gender": "Male",
+    "address": "42, Hitech City, New Delhi",
+    "emergencyContact": {
+      "name": "Arjun Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876543328"
+    },
+    "salary": {
+      "annual": 1480000,
+      "basic": 740000,
+      "hra": 296000,
+      "allowances": 296000,
+      "variable": 148000
+    },
+    "documents": [
+      {
+        "id": "DOC-9-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-12-08"
+      },
+      {
+        "id": "DOC-9-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-28"
+      }
+    ],
+    "profileCompletion": 94
+  },
+  {
+    "id": "EMP-1010",
+    "name": "Saanvi Kulkarni",
+    "email": "saanvi.kulkarni@peopleflow.io",
+    "phone": "+91 91233 12657",
+    "department": "Operations",
+    "designation": "Operations Analyst",
+    "manager": "Rahul Bhatia",
+    "location": "Hyderabad",
+    "employmentType": "Contract",
+    "status": "Active",
+    "joiningDate": "2019-10-10",
+    "birthDate": "1995-10-10",
+    "gender": "Female",
+    "address": "43, Koregaon Park, Hyderabad",
+    "emergencyContact": {
+      "name": "Saanvi Family",
+      "relationship": "Parent",
+      "phone": "+91 9876543369"
+    },
+    "salary": {
+      "annual": 1575000,
+      "basic": 787500,
+      "hra": 315000,
+      "allowances": 315000,
+      "variable": 157500
+    },
+    "documents": [
+      {
+        "id": "DOC-10-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-12-07"
+      },
+      {
+        "id": "DOC-10-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-27"
+      }
+    ],
+    "profileCompletion": 98
+  },
+  {
+    "id": "EMP-1011",
+    "name": "Dev Khanna",
+    "email": "dev.khanna@peopleflow.io",
+    "phone": "+91 91370 12730",
+    "department": "Engineering",
+    "designation": "Software Engineer",
+    "manager": "Aarav Mehta",
+    "location": "Pune",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2020-11-11",
+    "birthDate": "1996-11-11",
+    "gender": "Male",
+    "address": "44, Indiranagar, Pune",
+    "emergencyContact": {
+      "name": "Dev Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876543410"
+    },
+    "salary": {
+      "annual": 840000,
+      "basic": 420000,
+      "hra": 168000,
+      "allowances": 168000,
+      "variable": 84000
+    },
+    "documents": [
+      {
+        "id": "DOC-11-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-12-06"
+      },
+      {
+        "id": "DOC-11-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-26"
+      }
+    ],
+    "profileCompletion": 82
+  },
+  {
+    "id": "EMP-1012",
+    "name": "Priya Menon",
+    "email": "priya.menon@peopleflow.io",
+    "phone": "+91 91507 12803",
+    "department": "Engineering",
+    "designation": "Senior Software Engineer",
+    "manager": "Meera Nair",
+    "location": "Chennai",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2021-12-12",
+    "birthDate": "1997-12-12",
+    "gender": "Female",
+    "address": "45, Bandra West, Chennai",
+    "emergencyContact": {
+      "name": "Priya Family",
+      "relationship": "Parent",
+      "phone": "+91 9876543451"
+    },
+    "salary": {
+      "annual": 935000,
+      "basic": 467500,
+      "hra": 187000,
+      "allowances": 187000,
+      "variable": 93500
+    },
+    "documents": [
+      {
+        "id": "DOC-12-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-12-05"
+      },
+      {
+        "id": "DOC-12-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-25"
+      }
+    ],
+    "profileCompletion": 86
+  },
+  {
+    "id": "EMP-1013",
+    "name": "Aditya Sharma",
+    "email": "aditya.sharma@peopleflow.io",
+    "phone": "+91 91644 12876",
+    "department": "Product",
+    "designation": "Product Manager",
+    "manager": "Vikram Sethi",
+    "location": "Bengaluru",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2022-01-13",
+    "birthDate": "1998-01-13",
+    "gender": "Male",
+    "address": "46, Saket, Bengaluru",
+    "emergencyContact": {
+      "name": "Aditya Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876543492"
+    },
+    "salary": {
+      "annual": 1030000,
+      "basic": 515000,
+      "hra": 206000,
+      "allowances": 206000,
+      "variable": 103000
+    },
+    "documents": [
+      {
+        "id": "DOC-13-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-12-04"
+      },
+      {
+        "id": "DOC-13-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-24"
+      }
+    ],
+    "profileCompletion": 90
+  },
+  {
+    "id": "EMP-1014",
+    "name": "Kavya Reddy",
+    "email": "kavya.reddy@peopleflow.io",
+    "phone": "+91 91781 12949",
+    "department": "Product Design",
+    "designation": "Product Designer",
+    "manager": "Priya Menon",
+    "location": "Mumbai",
+    "employmentType": "Full-time",
+    "status": "On Leave",
+    "joiningDate": "2023-02-14",
+    "birthDate": "1986-02-14",
+    "gender": "Female",
+    "address": "47, Hitech City, Mumbai",
+    "emergencyContact": {
+      "name": "Kavya Family",
+      "relationship": "Parent",
+      "phone": "+91 9876543533"
+    },
+    "salary": {
+      "annual": 1125000,
+      "basic": 562500,
+      "hra": 225000,
+      "allowances": 225000,
+      "variable": 112500
+    },
+    "documents": [
+      {
+        "id": "DOC-14-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-12-03"
+      },
+      {
+        "id": "DOC-14-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-23"
+      }
+    ],
+    "profileCompletion": 94
+  },
+  {
+    "id": "EMP-1015",
+    "name": "Neel Joshi",
+    "email": "neel.joshi@peopleflow.io",
+    "phone": "+91 91918 13022",
+    "department": "Sales",
+    "designation": "Account Executive",
+    "manager": "Rahul Bhatia",
+    "location": "New Delhi",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2024-03-15",
+    "birthDate": "1987-03-15",
+    "gender": "Male",
+    "address": "48, Koregaon Park, New Delhi",
+    "emergencyContact": {
+      "name": "Neel Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876543574"
+    },
+    "salary": {
+      "annual": 1220000,
+      "basic": 610000,
+      "hra": 244000,
+      "allowances": 244000,
+      "variable": 122000
+    },
+    "documents": [
+      {
+        "id": "DOC-15-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-12-02"
+      },
+      {
+        "id": "DOC-15-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-22"
+      }
+    ],
+    "profileCompletion": 98
+  },
+  {
+    "id": "EMP-1016",
+    "name": "Tanvi Shah",
+    "email": "tanvi.shah@peopleflow.io",
+    "phone": "+91 92055 13095",
+    "department": "Marketing",
+    "designation": "Growth Specialist",
+    "manager": "Aarav Mehta",
+    "location": "Hyderabad",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2025-04-16",
+    "birthDate": "1988-04-16",
+    "gender": "Female",
+    "address": "49, Indiranagar, Hyderabad",
+    "emergencyContact": {
+      "name": "Tanvi Family",
+      "relationship": "Parent",
+      "phone": "+91 9876543615"
+    },
+    "salary": {
+      "annual": 1315000,
+      "basic": 657500,
+      "hra": 263000,
+      "allowances": 263000,
+      "variable": 131500
+    },
+    "documents": [
+      {
+        "id": "DOC-16-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-12-01"
+      },
+      {
+        "id": "DOC-16-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-21"
+      }
+    ],
+    "profileCompletion": 82
+  },
+  {
+    "id": "EMP-1017",
+    "name": "Rahul Bhatia",
+    "email": "rahul.bhatia@peopleflow.io",
+    "phone": "+91 92192 13168",
+    "department": "Finance",
+    "designation": "Financial Analyst",
+    "manager": "Meera Nair",
+    "location": "Pune",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2018-05-17",
+    "birthDate": "1989-05-17",
+    "gender": "Male",
+    "address": "50, Bandra West, Pune",
+    "emergencyContact": {
+      "name": "Rahul Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876543656"
+    },
+    "salary": {
+      "annual": 1410000,
+      "basic": 705000,
+      "hra": 282000,
+      "allowances": 282000,
+      "variable": 141000
+    },
+    "documents": [
+      {
+        "id": "DOC-17-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-30"
+      },
+      {
+        "id": "DOC-17-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-20"
+      }
+    ],
+    "profileCompletion": 86
+  },
+  {
+    "id": "EMP-1018",
+    "name": "Diya Verma",
+    "email": "diya.verma@peopleflow.io",
+    "phone": "+91 92329 13241",
+    "department": "People Operations",
+    "designation": "HR Business Partner",
+    "manager": "Vikram Sethi",
+    "location": "Chennai",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2019-06-18",
+    "birthDate": "1990-06-18",
+    "gender": "Female",
+    "address": "51, Saket, Chennai",
+    "emergencyContact": {
+      "name": "Diya Family",
+      "relationship": "Parent",
+      "phone": "+91 9876543697"
+    },
+    "salary": {
+      "annual": 1505000,
+      "basic": 752500,
+      "hra": 301000,
+      "allowances": 301000,
+      "variable": 150500
+    },
+    "documents": [
+      {
+        "id": "DOC-18-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-29"
+      },
+      {
+        "id": "DOC-18-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-19"
+      }
+    ],
+    "profileCompletion": 90
+  },
+  {
+    "id": "EMP-1019",
+    "name": "Siddharth Jain",
+    "email": "siddharth.jain@peopleflow.io",
+    "phone": "+91 92466 13314",
+    "department": "Customer Success",
+    "designation": "Customer Success Manager",
+    "manager": "Priya Menon",
+    "location": "Bengaluru",
+    "employmentType": "Contract",
+    "status": "Active",
+    "joiningDate": "2020-07-19",
+    "birthDate": "1991-07-19",
+    "gender": "Male",
+    "address": "52, Hitech City, Bengaluru",
+    "emergencyContact": {
+      "name": "Siddharth Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876543738"
+    },
+    "salary": {
+      "annual": 1600000,
+      "basic": 800000,
+      "hra": 320000,
+      "allowances": 320000,
+      "variable": 160000
+    },
+    "documents": [
+      {
+        "id": "DOC-19-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-28"
+      },
+      {
+        "id": "DOC-19-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-18"
+      }
+    ],
+    "profileCompletion": 94
+  },
+  {
+    "id": "EMP-1020",
+    "name": "Riya Mukherjee",
+    "email": "riya.mukherjee@peopleflow.io",
+    "phone": "+91 92603 13387",
+    "department": "Operations",
+    "designation": "Operations Analyst",
+    "manager": "Rahul Bhatia",
+    "location": "Mumbai",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2021-08-20",
+    "birthDate": "1992-08-20",
+    "gender": "Female",
+    "address": "53, Koregaon Park, Mumbai",
+    "emergencyContact": {
+      "name": "Riya Family",
+      "relationship": "Parent",
+      "phone": "+91 9876543779"
+    },
+    "salary": {
+      "annual": 1695000,
+      "basic": 847500,
+      "hra": 339000,
+      "allowances": 339000,
+      "variable": 169500
+    },
+    "documents": [
+      {
+        "id": "DOC-20-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-27"
+      },
+      {
+        "id": "DOC-20-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-17"
+      }
+    ],
+    "profileCompletion": 98
+  },
+  {
+    "id": "EMP-1021",
+    "name": "Varun Pillai",
+    "email": "varun.pillai@peopleflow.io",
+    "phone": "+91 92740 13460",
+    "department": "Engineering",
+    "designation": "Software Engineer",
+    "manager": "Aarav Mehta",
+    "location": "New Delhi",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2022-09-21",
+    "birthDate": "1993-09-21",
+    "gender": "Male",
+    "address": "54, Indiranagar, New Delhi",
+    "emergencyContact": {
+      "name": "Varun Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876543820"
+    },
+    "salary": {
+      "annual": 960000,
+      "basic": 480000,
+      "hra": 192000,
+      "allowances": 192000,
+      "variable": 96000
+    },
+    "documents": [
+      {
+        "id": "DOC-21-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-26"
+      },
+      {
+        "id": "DOC-21-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-16"
+      }
+    ],
+    "profileCompletion": 82
+  },
+  {
+    "id": "EMP-1022",
+    "name": "Aditi Chawla",
+    "email": "aditi.chawla@peopleflow.io",
+    "phone": "+91 92877 13533",
+    "department": "Engineering",
+    "designation": "Senior Software Engineer",
+    "manager": "Meera Nair",
+    "location": "Hyderabad",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2023-10-22",
+    "birthDate": "1994-10-22",
+    "gender": "Female",
+    "address": "55, Bandra West, Hyderabad",
+    "emergencyContact": {
+      "name": "Aditi Family",
+      "relationship": "Parent",
+      "phone": "+91 9876543861"
+    },
+    "salary": {
+      "annual": 1055000,
+      "basic": 527500,
+      "hra": 211000,
+      "allowances": 211000,
+      "variable": 105500
+    },
+    "documents": [
+      {
+        "id": "DOC-22-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-25"
+      },
+      {
+        "id": "DOC-22-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-15"
+      }
+    ],
+    "profileCompletion": 86
+  },
+  {
+    "id": "EMP-1023",
+    "name": "Karan Oberoi",
+    "email": "karan.oberoi@peopleflow.io",
+    "phone": "+91 93014 13606",
+    "department": "Product",
+    "designation": "Product Manager",
+    "manager": "Vikram Sethi",
+    "location": "Pune",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2024-11-23",
+    "birthDate": "1995-11-23",
+    "gender": "Male",
+    "address": "56, Saket, Pune",
+    "emergencyContact": {
+      "name": "Karan Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876543902"
+    },
+    "salary": {
+      "annual": 1150000,
+      "basic": 575000,
+      "hra": 230000,
+      "allowances": 230000,
+      "variable": 115000
+    },
+    "documents": [
+      {
+        "id": "DOC-23-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-24"
+      },
+      {
+        "id": "DOC-23-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-14"
+      }
+    ],
+    "profileCompletion": 90
+  },
+  {
+    "id": "EMP-1024",
+    "name": "Sneha Patil",
+    "email": "sneha.patil@peopleflow.io",
+    "phone": "+91 93151 13679",
+    "department": "Product Design",
+    "designation": "Product Designer",
+    "manager": "Priya Menon",
+    "location": "Chennai",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2025-12-24",
+    "birthDate": "1996-12-24",
+    "gender": "Female",
+    "address": "57, Hitech City, Chennai",
+    "emergencyContact": {
+      "name": "Sneha Family",
+      "relationship": "Parent",
+      "phone": "+91 9876543943"
+    },
+    "salary": {
+      "annual": 1245000,
+      "basic": 622500,
+      "hra": 249000,
+      "allowances": 249000,
+      "variable": 124500
+    },
+    "documents": [
+      {
+        "id": "DOC-24-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-23"
+      },
+      {
+        "id": "DOC-24-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-13"
+      }
+    ],
+    "profileCompletion": 94
+  },
+  {
+    "id": "EMP-1025",
+    "name": "Yash Gupta",
+    "email": "yash.gupta@peopleflow.io",
+    "phone": "+91 93288 13752",
+    "department": "Sales",
+    "designation": "Account Executive",
+    "manager": "Rahul Bhatia",
+    "location": "Bengaluru",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2018-01-01",
+    "birthDate": "1997-01-01",
+    "gender": "Male",
+    "address": "58, Koregaon Park, Bengaluru",
+    "emergencyContact": {
+      "name": "Yash Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876543984"
+    },
+    "salary": {
+      "annual": 1340000,
+      "basic": 670000,
+      "hra": 268000,
+      "allowances": 268000,
+      "variable": 134000
+    },
+    "documents": [
+      {
+        "id": "DOC-25-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-22"
+      },
+      {
+        "id": "DOC-25-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-12"
+      }
+    ],
+    "profileCompletion": 98
+  },
+  {
+    "id": "EMP-1026",
+    "name": "Pooja Krishnan",
+    "email": "pooja.krishnan@peopleflow.io",
+    "phone": "+91 93425 13825",
+    "department": "Marketing",
+    "designation": "Growth Specialist",
+    "manager": "Aarav Mehta",
+    "location": "Mumbai",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2019-02-02",
+    "birthDate": "1998-02-02",
+    "gender": "Female",
+    "address": "59, Indiranagar, Mumbai",
+    "emergencyContact": {
+      "name": "Pooja Family",
+      "relationship": "Parent",
+      "phone": "+91 9876544025"
+    },
+    "salary": {
+      "annual": 1435000,
+      "basic": 717500,
+      "hra": 287000,
+      "allowances": 287000,
+      "variable": 143500
+    },
+    "documents": [
+      {
+        "id": "DOC-26-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-21"
+      },
+      {
+        "id": "DOC-26-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-11"
+      }
+    ],
+    "profileCompletion": 82
+  },
+  {
+    "id": "EMP-1027",
+    "name": "Manav Arora",
+    "email": "manav.arora@peopleflow.io",
+    "phone": "+91 93562 13898",
+    "department": "Finance",
+    "designation": "Financial Analyst",
+    "manager": "Meera Nair",
+    "location": "New Delhi",
+    "employmentType": "Full-time",
+    "status": "On Leave",
+    "joiningDate": "2020-03-03",
+    "birthDate": "1986-03-03",
+    "gender": "Male",
+    "address": "60, Bandra West, New Delhi",
+    "emergencyContact": {
+      "name": "Manav Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876544066"
+    },
+    "salary": {
+      "annual": 1530000,
+      "basic": 765000,
+      "hra": 306000,
+      "allowances": 306000,
+      "variable": 153000
+    },
+    "documents": [
+      {
+        "id": "DOC-27-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-20"
+      },
+      {
+        "id": "DOC-27-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-10"
+      }
+    ],
+    "profileCompletion": 86
+  },
+  {
+    "id": "EMP-1028",
+    "name": "Tara Srinivasan",
+    "email": "tara.srinivasan@peopleflow.io",
+    "phone": "+91 93699 13971",
+    "department": "People Operations",
+    "designation": "HR Business Partner",
+    "manager": "Vikram Sethi",
+    "location": "Hyderabad",
+    "employmentType": "Contract",
+    "status": "Active",
+    "joiningDate": "2021-04-04",
+    "birthDate": "1987-04-04",
+    "gender": "Female",
+    "address": "61, Saket, Hyderabad",
+    "emergencyContact": {
+      "name": "Tara Family",
+      "relationship": "Parent",
+      "phone": "+91 9876544107"
+    },
+    "salary": {
+      "annual": 1625000,
+      "basic": 812500,
+      "hra": 325000,
+      "allowances": 325000,
+      "variable": 162500
+    },
+    "documents": [
+      {
+        "id": "DOC-28-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-19"
+      },
+      {
+        "id": "DOC-28-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-09"
+      }
+    ],
+    "profileCompletion": 90
+  },
+  {
+    "id": "EMP-1029",
+    "name": "Harsh Vardhan",
+    "email": "harsh.vardhan@peopleflow.io",
+    "phone": "+91 93836 14044",
+    "department": "Customer Success",
+    "designation": "Customer Success Manager",
+    "manager": "Priya Menon",
+    "location": "Pune",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2022-05-05",
+    "birthDate": "1988-05-05",
+    "gender": "Male",
+    "address": "62, Hitech City, Pune",
+    "emergencyContact": {
+      "name": "Harsh Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876544148"
+    },
+    "salary": {
+      "annual": 1720000,
+      "basic": 860000,
+      "hra": 344000,
+      "allowances": 344000,
+      "variable": 172000
+    },
+    "documents": [
+      {
+        "id": "DOC-29-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-18"
+      },
+      {
+        "id": "DOC-29-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-08"
+      }
+    ],
+    "profileCompletion": 94
+  },
+  {
+    "id": "EMP-1030",
+    "name": "Simran Kaur",
+    "email": "simran.kaur@peopleflow.io",
+    "phone": "+91 93973 14117",
+    "department": "Operations",
+    "designation": "Operations Analyst",
+    "manager": "Rahul Bhatia",
+    "location": "Chennai",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2023-06-06",
+    "birthDate": "1989-06-06",
+    "gender": "Female",
+    "address": "63, Koregaon Park, Chennai",
+    "emergencyContact": {
+      "name": "Simran Family",
+      "relationship": "Parent",
+      "phone": "+91 9876544189"
+    },
+    "salary": {
+      "annual": 1815000,
+      "basic": 907500,
+      "hra": 363000,
+      "allowances": 363000,
+      "variable": 181500
+    },
+    "documents": [
+      {
+        "id": "DOC-30-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-17"
+      },
+      {
+        "id": "DOC-30-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-07"
+      }
+    ],
+    "profileCompletion": 98
+  },
+  {
+    "id": "EMP-1031",
+    "name": "Abhinav Roy",
+    "email": "abhinav.roy@peopleflow.io",
+    "phone": "+91 94110 14190",
+    "department": "Engineering",
+    "designation": "Software Engineer",
+    "manager": "Aarav Mehta",
+    "location": "Bengaluru",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2024-07-07",
+    "birthDate": "1990-07-07",
+    "gender": "Male",
+    "address": "64, Indiranagar, Bengaluru",
+    "emergencyContact": {
+      "name": "Abhinav Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876544230"
+    },
+    "salary": {
+      "annual": 1080000,
+      "basic": 540000,
+      "hra": 216000,
+      "allowances": 216000,
+      "variable": 108000
+    },
+    "documents": [
+      {
+        "id": "DOC-31-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-16"
+      },
+      {
+        "id": "DOC-31-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-06"
+      }
+    ],
+    "profileCompletion": 82
+  },
+  {
+    "id": "EMP-1032",
+    "name": "Maya Thomas",
+    "email": "maya.thomas@peopleflow.io",
+    "phone": "+91 94247 14263",
+    "department": "Engineering",
+    "designation": "Senior Software Engineer",
+    "manager": "Meera Nair",
+    "location": "Mumbai",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2025-08-08",
+    "birthDate": "1991-08-08",
+    "gender": "Female",
+    "address": "65, Bandra West, Mumbai",
+    "emergencyContact": {
+      "name": "Maya Family",
+      "relationship": "Parent",
+      "phone": "+91 9876544271"
+    },
+    "salary": {
+      "annual": 1175000,
+      "basic": 587500,
+      "hra": 235000,
+      "allowances": 235000,
+      "variable": 117500
+    },
+    "documents": [
+      {
+        "id": "DOC-32-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-15"
+      },
+      {
+        "id": "DOC-32-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-05"
+      }
+    ],
+    "profileCompletion": 86
+  },
+  {
+    "id": "EMP-1033",
+    "name": "Dhruv Saxena",
+    "email": "dhruv.saxena@peopleflow.io",
+    "phone": "+91 94384 14336",
+    "department": "Product",
+    "designation": "Product Manager",
+    "manager": "Vikram Sethi",
+    "location": "New Delhi",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2018-09-09",
+    "birthDate": "1992-09-09",
+    "gender": "Male",
+    "address": "66, Saket, New Delhi",
+    "emergencyContact": {
+      "name": "Dhruv Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876544312"
+    },
+    "salary": {
+      "annual": 1270000,
+      "basic": 635000,
+      "hra": 254000,
+      "allowances": 254000,
+      "variable": 127000
+    },
+    "documents": [
+      {
+        "id": "DOC-33-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-14"
+      },
+      {
+        "id": "DOC-33-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-04"
+      }
+    ],
+    "profileCompletion": 90
+  },
+  {
+    "id": "EMP-1034",
+    "name": "Aisha Fernandes",
+    "email": "aisha.fernandes@peopleflow.io",
+    "phone": "+91 94521 14409",
+    "department": "Product Design",
+    "designation": "Product Designer",
+    "manager": "Priya Menon",
+    "location": "Hyderabad",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2019-10-10",
+    "birthDate": "1993-10-10",
+    "gender": "Female",
+    "address": "67, Hitech City, Hyderabad",
+    "emergencyContact": {
+      "name": "Aisha Family",
+      "relationship": "Parent",
+      "phone": "+91 9876544353"
+    },
+    "salary": {
+      "annual": 1365000,
+      "basic": 682500,
+      "hra": 273000,
+      "allowances": 273000,
+      "variable": 136500
+    },
+    "documents": [
+      {
+        "id": "DOC-34-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-13"
+      },
+      {
+        "id": "DOC-34-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-03"
+      }
+    ],
+    "profileCompletion": 94
+  },
+  {
+    "id": "EMP-1035",
+    "name": "Nikhil Dutta",
+    "email": "nikhil.dutta@peopleflow.io",
+    "phone": "+91 94658 14482",
+    "department": "Sales",
+    "designation": "Account Executive",
+    "manager": "Rahul Bhatia",
+    "location": "Pune",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2020-11-11",
+    "birthDate": "1994-11-11",
+    "gender": "Male",
+    "address": "68, Koregaon Park, Pune",
+    "emergencyContact": {
+      "name": "Nikhil Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876544394"
+    },
+    "salary": {
+      "annual": 1460000,
+      "basic": 730000,
+      "hra": 292000,
+      "allowances": 292000,
+      "variable": 146000
+    },
+    "documents": [
+      {
+        "id": "DOC-35-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-12"
+      },
+      {
+        "id": "DOC-35-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-02"
+      }
+    ],
+    "profileCompletion": 98
+  },
+  {
+    "id": "EMP-1036",
+    "name": "Shreya Banerjee",
+    "email": "shreya.banerjee@peopleflow.io",
+    "phone": "+91 94795 14555",
+    "department": "Marketing",
+    "designation": "Growth Specialist",
+    "manager": "Aarav Mehta",
+    "location": "Chennai",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2021-12-12",
+    "birthDate": "1995-12-12",
+    "gender": "Female",
+    "address": "69, Indiranagar, Chennai",
+    "emergencyContact": {
+      "name": "Shreya Family",
+      "relationship": "Parent",
+      "phone": "+91 9876544435"
+    },
+    "salary": {
+      "annual": 1555000,
+      "basic": 777500,
+      "hra": 311000,
+      "allowances": 311000,
+      "variable": 155500
+    },
+    "documents": [
+      {
+        "id": "DOC-36-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-11"
+      },
+      {
+        "id": "DOC-36-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-12-01"
+      }
+    ],
+    "profileCompletion": 82
+  },
+  {
+    "id": "EMP-1037",
+    "name": "Aryan Ghosh",
+    "email": "aryan.ghosh@peopleflow.io",
+    "phone": "+91 94932 14628",
+    "department": "Finance",
+    "designation": "Financial Analyst",
+    "manager": "Meera Nair",
+    "location": "Bengaluru",
+    "employmentType": "Contract",
+    "status": "Active",
+    "joiningDate": "2022-01-13",
+    "birthDate": "1996-01-13",
+    "gender": "Male",
+    "address": "70, Bandra West, Bengaluru",
+    "emergencyContact": {
+      "name": "Aryan Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876544476"
+    },
+    "salary": {
+      "annual": 1650000,
+      "basic": 825000,
+      "hra": 330000,
+      "allowances": 330000,
+      "variable": 165000
+    },
+    "documents": [
+      {
+        "id": "DOC-37-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-10"
+      },
+      {
+        "id": "DOC-37-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-11-30"
+      }
+    ],
+    "profileCompletion": 86
+  },
+  {
+    "id": "EMP-1038",
+    "name": "Ritu Agrawal",
+    "email": "ritu.agrawal@peopleflow.io",
+    "phone": "+91 95069 14701",
+    "department": "People Operations",
+    "designation": "HR Business Partner",
+    "manager": "Vikram Sethi",
+    "location": "Mumbai",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2023-02-14",
+    "birthDate": "1997-02-14",
+    "gender": "Female",
+    "address": "71, Saket, Mumbai",
+    "emergencyContact": {
+      "name": "Ritu Family",
+      "relationship": "Parent",
+      "phone": "+91 9876544517"
+    },
+    "salary": {
+      "annual": 1745000,
+      "basic": 872500,
+      "hra": 349000,
+      "allowances": 349000,
+      "variable": 174500
+    },
+    "documents": [
+      {
+        "id": "DOC-38-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-09"
+      },
+      {
+        "id": "DOC-38-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-11-29"
+      }
+    ],
+    "profileCompletion": 90
+  },
+  {
+    "id": "EMP-1039",
+    "name": "Sameer Qureshi",
+    "email": "sameer.qureshi@peopleflow.io",
+    "phone": "+91 95206 14774",
+    "department": "Customer Success",
+    "designation": "Customer Success Manager",
+    "manager": "Priya Menon",
+    "location": "New Delhi",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2024-03-15",
+    "birthDate": "1998-03-15",
+    "gender": "Male",
+    "address": "72, Hitech City, New Delhi",
+    "emergencyContact": {
+      "name": "Sameer Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876544558"
+    },
+    "salary": {
+      "annual": 1840000,
+      "basic": 920000,
+      "hra": 368000,
+      "allowances": 368000,
+      "variable": 184000
+    },
+    "documents": [
+      {
+        "id": "DOC-39-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-08"
+      },
+      {
+        "id": "DOC-39-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-11-28"
+      }
+    ],
+    "profileCompletion": 94
+  },
+  {
+    "id": "EMP-1040",
+    "name": "Nandini Das",
+    "email": "nandini.das@peopleflow.io",
+    "phone": "+91 95343 14847",
+    "department": "Operations",
+    "designation": "Operations Analyst",
+    "manager": "Rahul Bhatia",
+    "location": "Hyderabad",
+    "employmentType": "Full-time",
+    "status": "On Leave",
+    "joiningDate": "2025-04-16",
+    "birthDate": "1986-04-16",
+    "gender": "Female",
+    "address": "73, Koregaon Park, Hyderabad",
+    "emergencyContact": {
+      "name": "Nandini Family",
+      "relationship": "Parent",
+      "phone": "+91 9876544599"
+    },
+    "salary": {
+      "annual": 1935000,
+      "basic": 967500,
+      "hra": 387000,
+      "allowances": 387000,
+      "variable": 193500
+    },
+    "documents": [
+      {
+        "id": "DOC-40-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-07"
+      },
+      {
+        "id": "DOC-40-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-11-27"
+      }
+    ],
+    "profileCompletion": 98
+  },
+  {
+    "id": "EMP-1041",
+    "name": "Parth Trivedi",
+    "email": "parth.trivedi@peopleflow.io",
+    "phone": "+91 95480 14920",
+    "department": "Engineering",
+    "designation": "Software Engineer",
+    "manager": "Aarav Mehta",
+    "location": "Pune",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2018-05-17",
+    "birthDate": "1987-05-17",
+    "gender": "Male",
+    "address": "74, Indiranagar, Pune",
+    "emergencyContact": {
+      "name": "Parth Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876544640"
+    },
+    "salary": {
+      "annual": 1200000,
+      "basic": 600000,
+      "hra": 240000,
+      "allowances": 240000,
+      "variable": 120000
+    },
+    "documents": [
+      {
+        "id": "DOC-41-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-06"
+      },
+      {
+        "id": "DOC-41-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-11-26"
+      }
+    ],
+    "profileCompletion": 82
+  },
+  {
+    "id": "EMP-1042",
+    "name": "Zoya Mirza",
+    "email": "zoya.mirza@peopleflow.io",
+    "phone": "+91 95617 14993",
+    "department": "Engineering",
+    "designation": "Senior Software Engineer",
+    "manager": "Meera Nair",
+    "location": "Chennai",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2019-06-18",
+    "birthDate": "1988-06-18",
+    "gender": "Female",
+    "address": "75, Bandra West, Chennai",
+    "emergencyContact": {
+      "name": "Zoya Family",
+      "relationship": "Parent",
+      "phone": "+91 9876544681"
+    },
+    "salary": {
+      "annual": 1295000,
+      "basic": 647500,
+      "hra": 259000,
+      "allowances": 259000,
+      "variable": 129500
+    },
+    "documents": [
+      {
+        "id": "DOC-42-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-05"
+      },
+      {
+        "id": "DOC-42-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-11-25"
+      }
+    ],
+    "profileCompletion": 86
+  },
+  {
+    "id": "EMP-1043",
+    "name": "Akash Shetty",
+    "email": "akash.shetty@peopleflow.io",
+    "phone": "+91 95754 15066",
+    "department": "Product",
+    "designation": "Product Manager",
+    "manager": "Vikram Sethi",
+    "location": "Bengaluru",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2020-07-19",
+    "birthDate": "1989-07-19",
+    "gender": "Male",
+    "address": "76, Saket, Bengaluru",
+    "emergencyContact": {
+      "name": "Akash Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876544722"
+    },
+    "salary": {
+      "annual": 1390000,
+      "basic": 695000,
+      "hra": 278000,
+      "allowances": 278000,
+      "variable": 139000
+    },
+    "documents": [
+      {
+        "id": "DOC-43-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-04"
+      },
+      {
+        "id": "DOC-43-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-11-24"
+      }
+    ],
+    "profileCompletion": 90
+  },
+  {
+    "id": "EMP-1044",
+    "name": "Lakshmi Narayan",
+    "email": "lakshmi.narayan@peopleflow.io",
+    "phone": "+91 95891 15139",
+    "department": "Product Design",
+    "designation": "Product Designer",
+    "manager": "Priya Menon",
+    "location": "Mumbai",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2021-08-20",
+    "birthDate": "1990-08-20",
+    "gender": "Female",
+    "address": "77, Hitech City, Mumbai",
+    "emergencyContact": {
+      "name": "Lakshmi Family",
+      "relationship": "Parent",
+      "phone": "+91 9876544763"
+    },
+    "salary": {
+      "annual": 1485000,
+      "basic": 742500,
+      "hra": 297000,
+      "allowances": 297000,
+      "variable": 148500
+    },
+    "documents": [
+      {
+        "id": "DOC-44-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-03"
+      },
+      {
+        "id": "DOC-44-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-11-23"
+      }
+    ],
+    "profileCompletion": 94
+  },
+  {
+    "id": "EMP-1045",
+    "name": "Vihaan Goel",
+    "email": "vihaan.goel@peopleflow.io",
+    "phone": "+91 96028 15212",
+    "department": "Sales",
+    "designation": "Account Executive",
+    "manager": "Rahul Bhatia",
+    "location": "New Delhi",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2022-09-21",
+    "birthDate": "1991-09-21",
+    "gender": "Male",
+    "address": "78, Koregaon Park, New Delhi",
+    "emergencyContact": {
+      "name": "Vihaan Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876544804"
+    },
+    "salary": {
+      "annual": 1580000,
+      "basic": 790000,
+      "hra": 316000,
+      "allowances": 316000,
+      "variable": 158000
+    },
+    "documents": [
+      {
+        "id": "DOC-45-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-02"
+      },
+      {
+        "id": "DOC-45-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-11-22"
+      }
+    ],
+    "profileCompletion": 98
+  },
+  {
+    "id": "EMP-1046",
+    "name": "Neha Suri",
+    "email": "neha.suri@peopleflow.io",
+    "phone": "+91 96165 15285",
+    "department": "Marketing",
+    "designation": "Growth Specialist",
+    "manager": "Aarav Mehta",
+    "location": "Hyderabad",
+    "employmentType": "Contract",
+    "status": "Active",
+    "joiningDate": "2023-10-22",
+    "birthDate": "1992-10-22",
+    "gender": "Female",
+    "address": "79, Indiranagar, Hyderabad",
+    "emergencyContact": {
+      "name": "Neha Family",
+      "relationship": "Parent",
+      "phone": "+91 9876544845"
+    },
+    "salary": {
+      "annual": 1675000,
+      "basic": 837500,
+      "hra": 335000,
+      "allowances": 335000,
+      "variable": 167500
+    },
+    "documents": [
+      {
+        "id": "DOC-46-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-11-01"
+      },
+      {
+        "id": "DOC-46-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-11-21"
+      }
+    ],
+    "profileCompletion": 82
+  },
+  {
+    "id": "EMP-1047",
+    "name": "Omkar Jadhav",
+    "email": "omkar.jadhav@peopleflow.io",
+    "phone": "+91 96302 15358",
+    "department": "Finance",
+    "designation": "Financial Analyst",
+    "manager": "Meera Nair",
+    "location": "Pune",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2024-11-23",
+    "birthDate": "1993-11-23",
+    "gender": "Male",
+    "address": "80, Bandra West, Pune",
+    "emergencyContact": {
+      "name": "Omkar Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876544886"
+    },
+    "salary": {
+      "annual": 1770000,
+      "basic": 885000,
+      "hra": 354000,
+      "allowances": 354000,
+      "variable": 177000
+    },
+    "documents": [
+      {
+        "id": "DOC-47-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-10-31"
+      },
+      {
+        "id": "DOC-47-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-11-20"
+      }
+    ],
+    "profileCompletion": 86
+  },
+  {
+    "id": "EMP-1048",
+    "name": "Sakshi Anand",
+    "email": "sakshi.anand@peopleflow.io",
+    "phone": "+91 96439 15431",
+    "department": "People Operations",
+    "designation": "HR Business Partner",
+    "manager": "Vikram Sethi",
+    "location": "Chennai",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2025-12-24",
+    "birthDate": "1994-12-24",
+    "gender": "Female",
+    "address": "81, Saket, Chennai",
+    "emergencyContact": {
+      "name": "Sakshi Family",
+      "relationship": "Parent",
+      "phone": "+91 9876544927"
+    },
+    "salary": {
+      "annual": 1865000,
+      "basic": 932500,
+      "hra": 373000,
+      "allowances": 373000,
+      "variable": 186500
+    },
+    "documents": [
+      {
+        "id": "DOC-48-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-10-30"
+      },
+      {
+        "id": "DOC-48-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-11-19"
+      }
+    ],
+    "profileCompletion": 90
+  },
+  {
+    "id": "EMP-1049",
+    "name": "Reyansh Bansal",
+    "email": "reyansh.bansal@peopleflow.io",
+    "phone": "+91 96576 15504",
+    "department": "Customer Success",
+    "designation": "Customer Success Manager",
+    "manager": "Priya Menon",
+    "location": "Bengaluru",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2018-01-01",
+    "birthDate": "1995-01-01",
+    "gender": "Male",
+    "address": "82, Hitech City, Bengaluru",
+    "emergencyContact": {
+      "name": "Reyansh Family",
+      "relationship": "Spouse",
+      "phone": "+91 9876544968"
+    },
+    "salary": {
+      "annual": 1960000,
+      "basic": 980000,
+      "hra": 392000,
+      "allowances": 392000,
+      "variable": 196000
+    },
+    "documents": [
+      {
+        "id": "DOC-49-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-10-29"
+      },
+      {
+        "id": "DOC-49-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-11-18"
+      }
+    ],
+    "profileCompletion": 94
+  },
+  {
+    "id": "EMP-1050",
+    "name": "Kriti Mathur",
+    "email": "kriti.mathur@peopleflow.io",
+    "phone": "+91 96713 15577",
+    "department": "Operations",
+    "designation": "Operations Analyst",
+    "manager": "Rahul Bhatia",
+    "location": "Mumbai",
+    "employmentType": "Full-time",
+    "status": "Active",
+    "joiningDate": "2019-02-02",
+    "birthDate": "1996-02-02",
+    "gender": "Female",
+    "address": "83, Koregaon Park, Mumbai",
+    "emergencyContact": {
+      "name": "Kriti Family",
+      "relationship": "Parent",
+      "phone": "+91 9876545009"
+    },
+    "salary": {
+      "annual": 2055000,
+      "basic": 1027500,
+      "hra": 411000,
+      "allowances": 411000,
+      "variable": 205500
+    },
+    "documents": [
+      {
+        "id": "DOC-50-1",
+        "name": "Employment Agreement.pdf",
+        "type": "Contract",
+        "uploadedAt": "2025-10-28"
+      },
+      {
+        "id": "DOC-50-2",
+        "name": "Identity Verification.pdf",
+        "type": "Identity",
+        "uploadedAt": "2025-11-17"
+      }
+    ],
+    "profileCompletion": 98
+  }
+]
