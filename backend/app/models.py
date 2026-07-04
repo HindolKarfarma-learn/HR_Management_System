@@ -49,6 +49,16 @@ class Attendance(Base):
     # Relationships
     employee = relationship("User", back_populates="attendance_records")
 
+    @property
+    def employee_code(self):
+        return self.employee.employee_id if self.employee else None
+
+    @property
+    def employee_name(self):
+        if not self.employee:
+            return None
+        return " ".join(filter(None, [self.employee.first_name, self.employee.last_name])) or self.employee.email
+
 
 class LeaveRequest(Base):
     __tablename__ = "leave_requests"
@@ -65,6 +75,20 @@ class LeaveRequest(Base):
     # Relationships
     employee = relationship("User", back_populates="leave_requests")
 
+    @property
+    def employee_code(self):
+        return self.employee.employee_id if self.employee else None
+
+    @property
+    def employee_name(self):
+        if not self.employee:
+            return None
+        return " ".join(filter(None, [self.employee.first_name, self.employee.last_name])) or self.employee.email
+
+    @property
+    def employee_department(self):
+        return self.employee.department if self.employee else None
+
 
 class PayrollRecord(Base):
     __tablename__ = "payroll_records"
@@ -80,3 +104,21 @@ class PayrollRecord(Base):
 
     # Relationships
     employee = relationship("User", back_populates="payroll_records")
+
+    @property
+    def employee_code(self):
+        return self.employee.employee_id if self.employee else None
+
+    @property
+    def employee_name(self):
+        if not self.employee:
+            return None
+        return " ".join(filter(None, [self.employee.first_name, self.employee.last_name])) or self.employee.email
+
+    @property
+    def employee_department(self):
+        return self.employee.department if self.employee else None
+
+    @property
+    def employee_job_title(self):
+        return self.employee.job_title if self.employee else None

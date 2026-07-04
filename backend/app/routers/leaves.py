@@ -60,6 +60,33 @@ def get_my_leaves(
         models.LeaveRequest.employee_id == current_user.id
     ).order_by(models.LeaveRequest.start_date.desc()).all()
 
+@router.get("/balance", response_model=schemas.LeaveBalanceResponse)
+def get_leave_balance(
+    current_user: models.User = Depends(auth.get_current_active_user),
+    db: Session = Depends(get_db)
+):
+    year_start = date(date.today().year, 1, 1)
+    approved = db.query(models.LeaveRequest).filter(
+        models.LeaveRequest.employee_id == current_user.id,
+        models.LeaveRequest.status == "Approved",
+        models.LeaveRequest.end_date >= year_start
+    ).all()
+    used = {"annual": 0, "sick": 0, "casual": 0}
+    aliases = {
+        "paid": "annual", "annual leave": "annual",
+        "sick": "sick", "sick leave": "sick",
+        "casual": "casual", "casual leave": "casual"
+    }
+    for request in approved:
+        key = aliases.get(request.leave_type.lower())
+        if key:
+            used[key] += (request.end_date - request.start_date).days + 1
+    return {
+        "annual": {"total": 18, "used": used["annual"]},
+        "sick": {"total": 10, "used": used["sick"]},
+        "casual": {"total": 8, "used": used["casual"]}
+    }
+
 
 @router.get("/all-leaves", response_model=List[schemas.LeaveRequestOut])
 def get_all_leaves(

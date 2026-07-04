@@ -15,5 +15,7 @@ class Settings(BaseSettings):
     DEBUG: bool = True
     PORT: int = 8000
     HOST: str = "0.0.0.0"
+    AUTO_INIT_DB: bool = True
+    SEED_DEMO_USERS: bool = True
 
 settings = Settings()

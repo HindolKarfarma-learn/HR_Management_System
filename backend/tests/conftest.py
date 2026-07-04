@@ -1,8 +1,11 @@
+import os
 import pytest
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
+os.environ["AUTO_INIT_DB"] = "False"
+
 from app.database import Base, get_db
 from app.models import User, Attendance, LeaveRequest, PayrollRecord
 from app.main import app

@@ -76,6 +76,11 @@ uvicorn app.main:app --reload
 ```
 The server will start on `http://127.0.0.1:8000`.
 
+When `DEBUG=True` and `SEED_DEMO_USERS=True`, startup idempotently creates the frontend demo accounts:
+
+* Admin: `admin@peopleflow.io` / `Admin@123`
+* Employee: `employee@peopleflow.io` / `Employee@123`
+
 ---
 
 ## API Testing & Documentation

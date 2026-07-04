@@ -12,6 +12,13 @@ class TokenData(BaseModel):
     email: Optional[str] = None
     role: Optional[str] = None
 
+class PasswordResetRequest(BaseModel):
+    email: str
+
+class PasswordResetConfirm(BaseModel):
+    token: str
+    new_password: str = Field(..., min_length=8)
+
 
 # --- USER / EMPLOYEE SCHEMAS ---
 
@@ -77,6 +84,8 @@ class AttendanceCreate(BaseModel):
 class AttendanceOut(AttendanceBase):
     id: int
     employee_id: int
+    employee_code: Optional[str] = None
+    employee_name: Optional[str] = None
 
     model_config = ConfigDict(from_attributes=True)
 
@@ -100,6 +109,9 @@ class LeaveRequestOut(LeaveRequestBase):
     employee_id: int
     status: str = Field("Pending", description="Pending, Approved, Rejected")
     admin_comment: Optional[str] = None
+    employee_code: Optional[str] = None
+    employee_name: Optional[str] = None
+    employee_department: Optional[str] = None
 
     model_config = ConfigDict(from_attributes=True)
 
@@ -117,6 +129,10 @@ class PayrollRecordBase(BaseModel):
 class PayrollRecordOut(PayrollRecordBase):
     id: int
     employee_id: int
+    employee_code: Optional[str] = None
+    employee_name: Optional[str] = None
+    employee_department: Optional[str] = None
+    employee_job_title: Optional[str] = None
 
     model_config = ConfigDict(from_attributes=True)
 
@@ -124,6 +140,16 @@ class SalaryStructureUpdate(BaseModel):
     base_salary: float
     allowances: float
     deductions: float
+
+class SalaryOverviewOut(BaseModel):
+    employee_id: str
+    employee_name: str
+    department: Optional[str] = None
+    job_title: Optional[str] = None
+    base_salary: float
+    allowances: float
+    deductions: float
+    net_salary: float
 
 class ProcessPayrollRequest(BaseModel):
     month: str = Field(..., pattern=r"^\d{4}-\d{2}$", description="Month in YYYY-MM format")
@@ -134,3 +160,11 @@ class MyPayrollResponse(BaseModel):
     deductions: float
     history: List[PayrollRecordOut]
 
+class LeaveTypeBalance(BaseModel):
+    total: int
+    used: int
+
+class LeaveBalanceResponse(BaseModel):
+    annual: LeaveTypeBalance
+    sick: LeaveTypeBalance
+    casual: LeaveTypeBalance

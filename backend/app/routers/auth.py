@@ -122,3 +122,25 @@ def mock_verify_email(email: str, db: Session = Depends(get_db)):
     db.commit()
     
     return {"message": f"User {email} has been verified successfully (MOCK)."}
+
+@router.post("/forgot-password")
+def forgot_password(payload: schemas.PasswordResetRequest, db: Session = Depends(get_db)):
+    user = db.query(models.User).filter(models.User.email == payload.email).first()
+    if user:
+        token = auth.create_password_reset_token(user.email)
+        reset_link = f"http://localhost:5173/reset-password?token={token}"
+        logger.info("Password reset URL generated for %s: %s", user.email, reset_link)
+        print(f"\n[EMAIL SIMULATION] Password reset URL for {user.email}: {reset_link}\n")
+    return {"message": "If an account exists for that email, reset instructions have been sent."}
+
+@router.post("/reset-password")
+def reset_password(payload: schemas.PasswordResetConfirm, db: Session = Depends(get_db)):
+    token_data = auth.decode_token(payload.token)
+    if not token_data or token_data.get("type") != "password_reset":
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Invalid or expired password reset token")
+    user = db.query(models.User).filter(models.User.email == token_data.get("sub")).first()
+    if not user:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
+    user.hashed_password = auth.hash_password(payload.new_password)
+    db.commit()
+    return {"message": "Your password has been reset successfully."}

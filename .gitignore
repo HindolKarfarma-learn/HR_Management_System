@@ -222,3 +222,7 @@ node_modules/
 dist/
 .vite/
 *.local
+
+# Local database and archive artifacts
+data/
+*.zip

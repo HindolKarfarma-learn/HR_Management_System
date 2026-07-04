@@ -7,6 +7,26 @@ from app import models, schemas, auth
 
 router = APIRouter(prefix="/api/payroll", tags=["Payroll & Salary Management"])
 
+@router.get("/salary-overview", response_model=List[schemas.SalaryOverviewOut])
+def get_salary_overview(
+    current_user: models.User = Depends(auth.get_current_admin),
+    db: Session = Depends(get_db)
+):
+    employees = db.query(models.User).order_by(models.User.employee_id.asc()).all()
+    return [
+        {
+            "employee_id": employee.employee_id,
+            "employee_name": " ".join(filter(None, [employee.first_name, employee.last_name])) or employee.email,
+            "department": employee.department,
+            "job_title": employee.job_title,
+            "base_salary": employee.base_salary,
+            "allowances": employee.allowances,
+            "deductions": employee.deductions,
+            "net_salary": max(employee.base_salary + employee.allowances - employee.deductions, 0),
+        }
+        for employee in employees
+    ]
+
 @router.get("/my-payroll", response_model=schemas.MyPayrollResponse)
 def get_my_payroll(
     current_user: models.User = Depends(auth.get_current_active_user),

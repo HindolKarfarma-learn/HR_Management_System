@@ -104,3 +104,17 @@ def admin_update_employee(
     db.commit()
     db.refresh(employee)
     return employee
+
+@router.delete("/{employee_id}", status_code=status.HTTP_204_NO_CONTENT)
+def delete_employee(
+    employee_id: str,
+    current_user: models.User = Depends(auth.get_current_admin),
+    db: Session = Depends(get_db)
+):
+    employee = db.query(models.User).filter(models.User.employee_id == employee_id).first()
+    if not employee:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Employee not found.")
+    if employee.id == current_user.id:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="You cannot delete your own administrator account.")
+    db.delete(employee)
+    db.commit()
