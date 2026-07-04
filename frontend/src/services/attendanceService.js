@@ -1,45 +1,51 @@
-import mockAttendance from '../mock/attendance.json';
-import { copy, paginate, simulateLatency, sortRecords } from './serviceUtils';
+import { api } from './api';
+import { mapAttendance } from './apiMappers';
+import { getSessionUser, paginate, sortRecords } from './serviceUtils';
 
-let records = copy(mockAttendance);
+const isAdmin = () => getSessionUser()?.role === 'admin';
+
+async function fetchAttendance({ employeeId, date } = {}) {
+  const endpoint = isAdmin() ? '/attendance/all-attendance' : '/attendance/my-attendance';
+  const params = isAdmin()
+    ? { employee_id: employeeId || undefined, date_filter: date || undefined }
+    : { start_date: date || undefined, end_date: date || undefined };
+  const { data } = await api.get(endpoint, { params });
+  return data.map(mapAttendance);
+}
 
 export const attendanceService = {
   async getAttendance({ employeeId, search = '', status = '', date = '', page = 1, pageSize = 10, sort } = {}) {
-    await simulateLatency();
     const query = search.toLowerCase();
+    const records = await fetchAttendance({ employeeId, date });
     const filtered = records.filter((record) =>
-      (!employeeId || record.employeeId === employeeId)
-      && (!query || record.employeeName.toLowerCase().includes(query))
-      && (!status || record.status === status)
-      && (!date || record.date === date),
+      (!query || record.employeeName.toLowerCase().includes(query))
+      && (!status || record.status === status),
     );
-    return copy(paginate(sortRecords(filtered, sort), page, pageSize));
+    return paginate(sortRecords(filtered, sort), page, pageSize);
   },
 
   async getEmployeeSummary(employeeId) {
-    await simulateLatency(250);
-    const employeeRecords = records.filter((record) => record.employeeId === employeeId);
-    const counts = employeeRecords.reduce((summary, record) => ({ ...summary, [record.status]: (summary[record.status] || 0) + 1 }), {});
-    return { counts, averageHours: Number((employeeRecords.reduce((sum, item) => sum + item.workHours, 0) / employeeRecords.length).toFixed(1)) };
-  },
-
-  async checkIn(employee) {
-    await simulateLatency();
-    const record = {
-      id: `ATT-${Date.now()}`, employeeId: employee.id, employeeName: employee.name,
-      date: new Date().toISOString().slice(0, 10), checkIn: new Date().toTimeString().slice(0, 5),
-      checkOut: null, workHours: 0, status: 'Present',
+    const records = await fetchAttendance({ employeeId });
+    const counts = records.reduce(
+      (summary, record) => ({ ...summary, [record.status]: (summary[record.status] || 0) + 1 }),
+      {},
+    );
+    const workedDays = records.filter((record) => record.workHours > 0);
+    return {
+      counts,
+      averageHours: workedDays.length
+        ? Number((workedDays.reduce((sum, item) => sum + item.workHours, 0) / workedDays.length).toFixed(1))
+        : 0,
     };
-    records = [record, ...records.filter((item) => !(item.employeeId === employee.id && item.date === record.date))];
-    return copy(record);
   },
 
-  async checkOut(employeeId) {
-    await simulateLatency();
-    const record = records.find((item) => item.employeeId === employeeId);
-    if (!record) throw new Error('No active attendance record.');
-    record.checkOut = new Date().toTimeString().slice(0, 5);
-    record.workHours = 8.5;
-    return copy(record);
+  async checkIn() {
+    const { data } = await api.post('/attendance/check-in', {});
+    return mapAttendance(data);
+  },
+
+  async checkOut() {
+    const { data } = await api.post('/attendance/check-out', {});
+    return mapAttendance(data);
   },
 };

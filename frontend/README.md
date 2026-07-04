@@ -52,7 +52,7 @@ src/
 ├── components/   # reusable UI, forms, tables, cards, layout
 ├── features/     # auth, dashboard, employees, attendance, leave, payroll, profile
 ├── services/     # backend-independent data contracts
-├── mock/         # realistic development datasets
+├── mock/         # legacy fixtures retained for design/reference
 ├── routes/       # lazy routes and authorization guards
 ├── layouts/      # public and authenticated shells
 ├── store/        # Zustand session and UI state
@@ -61,24 +61,13 @@ src/
 └── utils/        # framework-independent helpers
 ```
 
-Pages and components never import mock JSON. A feature calls its service, and the service currently returns mock data with simulated latency. To connect the backend, replace the implementation inside the corresponding service with the configured Axios client; feature UI and query hooks remain unchanged.
+Pages and components never depend on backend response shapes directly. Feature services call the FastAPI backend through the shared Axios client, while `apiMappers.js` normalizes snake_case fields, role casing, internal IDs, dates, and payroll structures.
 
-For example:
+During development, Vite proxies `/api` to `http://127.0.0.1:8000`. Set `VITE_API_URL` in `.env` when deploying the frontend and backend on separate origins.
 
-```js
-// Current
-return copy(mockEmployees);
+## Legacy mock data
 
-// Backend integration
-const { data } = await api.get('/employees');
-return data;
-```
-
-Set `VITE_API_URL` in `.env` to configure the API base URL.
-
-## Mock data
-
-The repository includes 50 realistic employees, 1,750 attendance entries, leave requests, payroll records, notifications, and dashboard activity. Regenerate deterministic mock datasets with:
+The original realistic fixtures remain available for UI development and reference, but production services no longer import them. Regenerate them with:
 
 ```bash
 node scripts/generateMockData.mjs

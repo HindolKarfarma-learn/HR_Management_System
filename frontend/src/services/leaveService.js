@@ -1,41 +1,40 @@
-import mockLeave from '../mock/leave.json';
-import { copy, paginate, simulateLatency, sortRecords } from './serviceUtils';
-
-let requests = copy(mockLeave);
+import { api } from './api';
+import { mapLeave } from './apiMappers';
+import { getSessionUser, paginate, sortRecords } from './serviceUtils';
 
 export const leaveService = {
-  async getLeaveRequests({ employeeId, search = '', status = '', page = 1, pageSize = 10, sort } = {}) {
-    await simulateLatency();
+  async getLeaveRequests({ search = '', status = '', page = 1, pageSize = 10, sort } = {}) {
+    const admin = getSessionUser()?.role === 'admin';
+    const endpoint = admin ? '/leaves/all-leaves' : '/leaves/my-leaves';
+    const { data } = await api.get(endpoint, {
+      params: admin ? { status_filter: status || undefined } : undefined,
+    });
     const query = search.toLowerCase();
-    const filtered = requests.filter((request) =>
-      (!employeeId || request.employeeId === employeeId)
-      && (!query || request.employeeName.toLowerCase().includes(query))
+    const filtered = data.map(mapLeave).filter((request) =>
+      (!query || request.employeeName.toLowerCase().includes(query))
       && (!status || request.status === status),
     );
-    return copy(paginate(sortRecords(filtered, sort), page, pageSize));
+    return paginate(sortRecords(filtered, sort), page, pageSize);
   },
 
   async getLeaveBalance() {
-    await simulateLatency(250);
-    return { annual: { total: 18, used: 6 }, sick: { total: 10, used: 3 }, casual: { total: 8, used: 4 } };
+    const { data } = await api.get('/leaves/balance');
+    return data;
   },
 
-  async applyLeave(payload, employee) {
-    await simulateLatency();
-    const request = {
-      id: `LR-${Date.now()}`, employeeId: employee.id, employeeName: employee.name,
-      department: employee.department, ...payload, status: 'Pending',
-      appliedOn: new Date().toISOString().slice(0, 10), comments: '',
-    };
-    requests = [request, ...requests];
-    return copy(request);
+  async applyLeave(payload) {
+    const { data } = await api.post('/leaves/apply', {
+      leave_type: payload.type,
+      start_date: payload.startDate,
+      end_date: payload.endDate,
+      remarks: payload.reason,
+    });
+    return mapLeave(data);
   },
 
   async updateLeaveStatus(id, status, comments = '') {
-    await simulateLatency();
-    const request = requests.find((item) => item.id === id);
-    if (!request) throw new Error('Leave request not found.');
-    Object.assign(request, { status, comments });
-    return copy(request);
+    const action = status === 'Approved' ? 'approve' : 'reject';
+    const { data } = await api.post(`/leaves/${id}/${action}`, { admin_comment: comments });
+    return mapLeave(data);
   },
 };

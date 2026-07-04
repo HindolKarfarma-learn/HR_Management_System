@@ -14,5 +14,14 @@ api.interceptors.request.use((config) => {
 
 api.interceptors.response.use(
   (response) => response,
-  (error) => Promise.reject(error),
+  (error) => {
+    const message = error.response?.data?.detail || error.response?.data?.message || error.message || 'Request failed.';
+    const apiError = new Error(Array.isArray(message) ? message.map((item) => item.msg).join(', ') : message);
+    apiError.status = error.response?.status;
+    if (apiError.status === 401) {
+      localStorage.removeItem('hrms-token');
+      localStorage.removeItem('peopleflow-session');
+    }
+    return Promise.reject(apiError);
+  },
 );

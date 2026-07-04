@@ -17,3 +17,11 @@ export function paginate(records, page = 1, pageSize = 10) {
     totalPages: Math.ceil(records.length / pageSize),
   };
 }
+
+export function getSessionUser() {
+  try {
+    return JSON.parse(localStorage.getItem('peopleflow-session') || '{}')?.state?.user || null;
+  } catch {
+    return null;
+  }
+}

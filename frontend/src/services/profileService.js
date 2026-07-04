@@ -1,18 +1,14 @@
-import mockEmployees from '../mock/employees.json';
-import { copy, simulateLatency } from './serviceUtils';
-
-let profiles = copy(mockEmployees);
+import { api } from './api';
+import { mapUser, toUserUpdate } from './apiMappers';
 
 export const profileService = {
-  async getProfile(employeeId) {
-    await simulateLatency();
-    return copy(profiles.find((employee) => employee.id === employeeId) || profiles[0]);
+  async getProfile() {
+    const { data } = await api.get('/employees/me');
+    return mapUser(data);
   },
-  async updateProfile(employeeId, payload) {
-    await simulateLatency();
-    const index = profiles.findIndex((employee) => employee.id === employeeId);
-    if (index < 0) throw new Error('Profile not found.');
-    profiles[index] = { ...profiles[index], ...payload };
-    return copy(profiles[index]);
+
+  async updateProfile(_employeeId, payload) {
+    const { data } = await api.put('/employees/me', toUserUpdate(payload));
+    return mapUser(data);
   },
 };

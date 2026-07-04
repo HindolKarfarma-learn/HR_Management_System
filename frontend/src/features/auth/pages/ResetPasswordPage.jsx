@@ -2,7 +2,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useMutation } from '@tanstack/react-query';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Button } from '../../../components/ui/Button';
 import { Input } from '../../../components/ui/Input';
 import { authService } from '../../../services/authService';
@@ -11,9 +11,10 @@ import { resetPasswordSchema } from '../validation/authSchemas';
 
 export default function ResetPasswordPage() {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const { register, handleSubmit, formState: { errors } } = useForm({ resolver: zodResolver(resetPasswordSchema) });
   const reset = useMutation({
-    mutationFn: authService.resetPassword,
+    mutationFn: (values) => authService.resetPassword({ ...values, token: searchParams.get('token') }),
     onSuccess: ({ message }) => {
       toast.success(message);
       navigate('/login');

@@ -1,53 +1,60 @@
-import mockAuth from '../mock/auth.json';
+import { api } from './api';
+import { mapUser } from './apiMappers';
 
-const wait = (delay = 600) => new Promise((resolve) => setTimeout(resolve, delay));
-const publicUser = ({ password: _password, ...user }) => user;
+const pendingEmailKey = 'peopleflow-pending-email';
 
 export const authService = {
-  async login(credentials) {
-    await wait();
-    const user = mockAuth.users.find(
-      (record) => record.email.toLowerCase() === credentials.email.toLowerCase() && record.password === credentials.password,
-    );
-    if (!user) throw new Error('Incorrect email or password.');
-    return { user: publicUser(user), token: `mock-token-${user.id}` };
+  async login({ email, password }) {
+    const form = new URLSearchParams({ username: email, password });
+    const { data: tokenData } = await api.post('/auth/login', form, {
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    });
+    const token = tokenData.access_token;
+    const { data: user } = await api.get('/employees/me', {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+    return { user: mapUser(user), token };
   },
 
   async signup(payload) {
-    await wait();
-    if (mockAuth.users.some((user) => user.email.toLowerCase() === payload.email.toLowerCase())) {
-      throw new Error('An account already exists for this email.');
-    }
-    return { message: 'Verification email sent successfully.' };
+    const { data } = await api.post('/auth/register', {
+      employee_id: payload.employeeId,
+      email: payload.email,
+      password: payload.password,
+      role: 'Employee',
+      first_name: payload.firstName,
+      last_name: payload.lastName,
+    });
+    localStorage.setItem(pendingEmailKey, payload.email);
+    return { user: mapUser(data), message: 'Account created. Verify your email to continue.' };
   },
 
-  async forgotPassword() {
-    await wait();
-    return { message: 'Password reset instructions sent.' };
+  async forgotPassword({ email }) {
+    const { data } = await api.post('/auth/forgot-password', { email });
+    return data;
   },
 
   async verifyEmail(code) {
-    await wait();
-    if (code !== '123456') throw new Error('The verification code is invalid.');
-    return { message: 'Email verified successfully.' };
+    if (code !== '123456') throw new Error('Enter the demo verification code 123456.');
+    const email = localStorage.getItem(pendingEmailKey);
+    if (!email) throw new Error('Create an account before verifying your email.');
+    const { data } = await api.post('/auth/verify-mock', null, { params: { email } });
+    localStorage.removeItem(pendingEmailKey);
+    return data;
   },
 
-  async resetPassword() {
-    await wait();
-    return { message: 'Your password has been reset.' };
+  async resetPassword({ token, password }) {
+    if (!token) throw new Error('The password reset link is missing or invalid.');
+    const { data } = await api.post('/auth/reset-password', { token, new_password: password });
+    return data;
   },
 
   async me() {
-    await wait(250);
-    const stored = JSON.parse(localStorage.getItem('peopleflow-session') || '{}');
-    const id = stored?.state?.user?.id;
-    const user = mockAuth.users.find((record) => record.id === id);
-    if (!user) throw new Error('Session expired.');
-    return publicUser(user);
+    const { data } = await api.get('/employees/me');
+    return mapUser(data);
   },
 
   async logout() {
-    await wait(200);
     return { success: true };
   },
 };
