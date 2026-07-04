@@ -7,4 +7,5 @@ export const employeeSchema = z.object({
   department: z.string().min(1, 'Select a department.'),
   designation: z.string().min(2, 'Enter a designation.'),
   location: z.string().min(2, 'Enter a location.'),
+  role: z.enum(['admin', 'employee'], { message: 'Select an account role.' }),
 });

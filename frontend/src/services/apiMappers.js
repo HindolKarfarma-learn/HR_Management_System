@@ -59,6 +59,7 @@ export function toUserUpdate(values) {
     address: values.address,
     job_title: values.designation,
     department: values.department,
+    ...(values.role && { role: values.role === 'admin' ? 'Admin' : 'Employee' }),
     ...(Object.hasOwn(values, 'birthDate') && { date_of_birth: values.birthDate || null }),
     ...(Object.hasOwn(values, 'gender') && { gender: values.gender || null }),
     ...(values.emergencyContact && {

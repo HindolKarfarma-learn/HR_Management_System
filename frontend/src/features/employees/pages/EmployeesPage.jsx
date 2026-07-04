@@ -32,6 +32,7 @@ export default function EmployeesPage() {
     { key: 'name', label: 'Employee', sortable: true, render: (_, row) => <div className="flex items-center gap-3"><Avatar name={row.name} /><div><p className="font-semibold text-slate-800">{row.name}</p><p className="text-xs text-slate-500">{row.id}</p></div></div> },
     { key: 'department', label: 'Department', sortable: true },
     { key: 'designation', label: 'Designation', sortable: true },
+    { key: 'role', label: 'Role', sortable: true, render: (value) => <Badge variant={value === 'admin' ? 'info' : 'neutral'}>{value === 'admin' ? 'Administrator' : 'Employee'}</Badge> },
     { key: 'location', label: 'Location', sortable: true },
     { key: 'status', label: 'Status', render: (value) => <Badge variant={statusVariant[value]}>{value}</Badge> },
     { key: 'actions', label: '', render: (_, row) => <EmployeeActions employee={row} onEdit={setEditing} onDelete={setDeleting} /> },

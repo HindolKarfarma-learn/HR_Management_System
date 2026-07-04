@@ -22,6 +22,15 @@ export function EmployeeForm({ employee, onSubmit, onCancel, loading }) {
         <Select label="Department" options={departments} error={errors.department?.message} {...register('department')} />
         <Input label="Designation" error={errors.designation?.message} {...register('designation')} />
         <Input label="Location" error={errors.location?.message} {...register('location')} />
+        <Select
+          label="Account role"
+          options={[
+            { value: 'employee', label: 'Employee' },
+            { value: 'admin', label: 'Administrator' },
+          ]}
+          error={errors.role?.message}
+          {...register('role')}
+        />
       </div>
       <div className="flex justify-end gap-3 pt-2">
         <Button variant="secondary" onClick={onCancel}>Cancel</Button>

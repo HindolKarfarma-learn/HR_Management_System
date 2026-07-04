@@ -79,6 +79,18 @@ def admin_update_employee(
         )
         
     update_dict = admin_update_data.model_dump(exclude_unset=True)
+
+    if "role" in update_dict:
+        if update_dict["role"] not in {"Admin", "Employee"}:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Role must be either Admin or Employee."
+            )
+        if employee.id == current_user.id and update_dict["role"] != "Admin":
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="You cannot remove your own administrator role."
+            )
     
     # Check email uniqueness if email is being updated
     if "email" in update_dict and update_dict["email"] != employee.email:
