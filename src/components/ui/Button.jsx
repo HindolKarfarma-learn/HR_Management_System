@@ -23,22 +23,24 @@ export function Button({
   loading = false,
   type = 'button',
   disabled,
+  as: Component = 'button',
   ...props
 }) {
   return (
-    <button
-      type={type}
+    <Component
+      type={Component === 'button' ? type : undefined}
       className={cn(
         'inline-flex items-center justify-center gap-2 rounded-lg font-semibold transition disabled:cursor-not-allowed disabled:opacity-60',
         variants[variant],
         sizes[size],
         className,
       )}
-      disabled={disabled || loading}
+      disabled={Component === 'button' ? disabled || loading : undefined}
+      aria-disabled={Component !== 'button' && (disabled || loading) ? true : undefined}
       {...props}
     >
       {loading && <LoaderCircle className="size-4 animate-spin" aria-hidden="true" />}
       {children}
-    </button>
+    </Component>
   );
 }

@@ -10,7 +10,12 @@ export function DataTable({ columns, data, sort, onSort, rowKey = 'id', emptyTit
         <thead className="border-y border-slate-200 bg-slate-50 text-xs uppercase tracking-wide text-slate-500">
           <tr>
             {columns.map((column) => (
-              <th key={column.key} scope="col" className="px-5 py-3 font-semibold">
+              <th
+                key={column.key}
+                scope="col"
+                aria-sort={column.sortable && sort?.key === column.key ? (sort.direction === 'asc' ? 'ascending' : 'descending') : undefined}
+                className="px-5 py-3 font-semibold"
+              >
                 {column.sortable ? (
                   <button type="button" className="inline-flex items-center gap-1 hover:text-slate-800" onClick={() => onSort(column.key)}>
                     {column.label}

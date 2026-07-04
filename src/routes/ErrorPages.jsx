@@ -13,7 +13,7 @@ function ErrorPage({ code, title, description, icon: Icon }) {
         <p className="mx-auto mt-3 max-w-md text-slate-500">{description}</p>
         <div className="mt-7 flex justify-center gap-3">
           <Button variant="secondary" onClick={() => navigate(-1)}><ArrowLeft className="size-4" />Go back</Button>
-          <Link to="/dashboard"><Button><Home className="size-4" />Dashboard</Button></Link>
+          <Button as={Link} to="/dashboard"><Home className="size-4" />Dashboard</Button>
         </div>
       </div>
     </main>

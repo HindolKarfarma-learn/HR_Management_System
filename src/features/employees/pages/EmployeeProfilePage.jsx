@@ -26,7 +26,7 @@ export default function EmployeeProfilePage() {
   const save = (values) => update.mutate({ id: employee.id, values }, { onSuccess: () => { toast.success('Employee updated'); setEditing(false); } });
   return (
     <>
-      <PageHeader title="Employee profile" description="Personal, employment, salary, and document details." action={<Link to="/employees"><Button variant="secondary"><ArrowLeft className="size-4" />Back to employees</Button></Link>} />
+      <PageHeader title="Employee profile" description="Personal, employment, salary, and document details." action={<Button as={Link} to="/employees" variant="secondary"><ArrowLeft className="size-4" />Back to employees</Button>} />
       <Card className="mb-6">
         <CardContent className="flex flex-col gap-5 sm:flex-row sm:items-center">
           <Avatar name={employee.name} src={employee.avatar} size="xl" />

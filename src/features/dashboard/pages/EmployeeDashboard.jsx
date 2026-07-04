@@ -28,7 +28,7 @@ export default function EmployeeDashboard({ data }) {
       <div className="grid gap-6 xl:grid-cols-2">
         <Card><CardHeader title="Recent activity" /><CardContent><ActivityList activities={data.activities} /></CardContent></Card>
         <Card>
-          <CardHeader title="Upcoming holidays" action={<Link to="/leave"><Button size="sm" variant="ghost">View calendar</Button></Link>} />
+          <CardHeader title="Upcoming holidays" action={<Button as={Link} to="/leave" size="sm" variant="ghost">View calendar</Button>} />
           <CardContent className="space-y-4">
             {data.holidays.map((holiday) => (
               <div key={holiday.date} className="flex items-center gap-4">

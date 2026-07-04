@@ -8,7 +8,7 @@ export default function AuthLayout() {
   return (
     <main className="grid min-h-screen bg-white lg:grid-cols-[1.05fr_0.95fr]">
       <section className="hidden overflow-hidden bg-slate-950 p-12 text-white lg:flex lg:flex-col lg:justify-between">
-        <Brand />
+        <Brand inverse />
         <div className="max-w-xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-400">People operations, elevated</p>
           <h1 className="mt-5 text-5xl font-bold leading-tight">Give your people the tools to do their best work.</h1>

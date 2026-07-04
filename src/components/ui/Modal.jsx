@@ -1,17 +1,38 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { X } from 'lucide-react';
 import { cn } from '../../utils/cn';
 
 export function Modal({ open, onClose, title, description, children, className }) {
+  const panelRef = useRef(null);
   useEffect(() => {
     if (!open) return undefined;
-    const handleKeyDown = (event) => event.key === 'Escape' && onClose();
+    const previouslyFocused = document.activeElement;
+    const focusableSelector = 'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+    const focusable = () => [...(panelRef.current?.querySelectorAll(focusableSelector) || [])];
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') onClose();
+      if (event.key === 'Tab') {
+        const elements = focusable();
+        if (!elements.length) return;
+        const first = elements[0];
+        const last = elements.at(-1);
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    };
     document.addEventListener('keydown', handleKeyDown);
     document.body.style.overflow = 'hidden';
+    requestAnimationFrame(() => focusable()[0]?.focus());
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
       document.body.style.overflow = '';
+      previouslyFocused?.focus();
     };
   }, [open, onClose]);
 
@@ -29,6 +50,7 @@ export function Modal({ open, onClose, title, description, children, className }
             onClick={onClose}
           />
           <motion.div
+            ref={panelRef}
             initial={{ opacity: 0, scale: 0.96, y: 12 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.96, y: 12 }}
