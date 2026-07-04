@@ -38,6 +38,11 @@ class UserUpdate(BaseModel):
     phone: Optional[str] = None
     address: Optional[str] = None
     profile_picture_url: Optional[str] = None
+    date_of_birth: Optional[date] = None
+    gender: Optional[str] = None
+    emergency_contact_name: Optional[str] = None
+    emergency_contact_relationship: Optional[str] = None
+    emergency_contact_phone: Optional[str] = None
 
 class AdminUserUpdate(UserUpdate):
     employee_id: Optional[str] = None
@@ -62,6 +67,11 @@ class UserOut(UserBase):
     job_title: Optional[str] = None
     department: Optional[str] = None
     joining_date: Optional[date] = None
+    date_of_birth: Optional[date] = None
+    gender: Optional[str] = None
+    emergency_contact_name: Optional[str] = None
+    emergency_contact_relationship: Optional[str] = None
+    emergency_contact_phone: Optional[str] = None
     base_salary: float
     allowances: float
     deductions: float

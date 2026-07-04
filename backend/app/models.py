@@ -18,6 +18,11 @@ class User(Base):
     phone = Column(String(20), nullable=True)
     address = Column(String(255), nullable=True)
     profile_picture_url = Column(String(500), nullable=True)
+    date_of_birth = Column(Date, nullable=True)
+    gender = Column(String(30), nullable=True)
+    emergency_contact_name = Column(String(100), nullable=True)
+    emergency_contact_relationship = Column(String(50), nullable=True)
+    emergency_contact_phone = Column(String(20), nullable=True)
     
     # Job details
     job_title = Column(String(100), nullable=True)
